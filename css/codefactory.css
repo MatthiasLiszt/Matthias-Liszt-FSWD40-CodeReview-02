@@ -1,0 +1,77 @@
+header {
+  background-color: darkblue;
+  height: 30vh;
+  display: flex;
+}
+header div {
+  color: white;
+  font-size: 9vh;
+  font-family: "sans-serif";
+  height: 8vh;
+  margin: 1vh;
+  width: 40vw;
+}
+header p {
+  margin: 0;
+  height: 7vh;
+}
+
+#logo {
+  width: 20vw;
+}
+
+main {
+  display: flex;
+  background-color: lightgrey;
+}
+main > div {
+  margin: 3vh;
+  width: 30vw;
+  border: grey solid 2px;
+  background-color: white;
+}
+main img {
+  width: 30vw;
+}
+
+.cityName {
+  color: lightblue;
+  font-size: 2em;
+  text-align: left;
+  width: 18vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.price {
+  color: darkgrey;
+  font-size: 2em;
+  text-align: right;
+  width: 8vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+body {
+  font-family: "sans-serif";
+}
+
+.line {
+  display: flex;
+}
+
+.countryName {
+  width: 13vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  text-align: left;
+  color: grey;
+}
+
+.priceDescription {
+  width: 13vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  text-align: right;
+  color: grey;
+}
