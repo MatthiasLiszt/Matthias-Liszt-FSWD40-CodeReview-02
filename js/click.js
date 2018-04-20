@@ -35,7 +35,6 @@ function clickHandler(product){
 function SelectIt(Id){
  Id.setAttribute("style","border: red solid 2px;");
  console.log('localStorage '+localStorage.productOne+' '+localStorage.productTwo);
-
 }
 
 function UnselectIt(Id){
@@ -47,5 +46,18 @@ function UnselectIt(Id){
 function eraseLocalStorage(){
  localStorage.productOne=false;
  localStorage.productTwo=false;
+ localStorage.goldenCard=false;
  console.log('localStorage '+localStorage.productOne+' '+localStorage.productTwo);
 }
+
+function goldenCardBonus(){
+ if(localStorage.goldenCard='false') 
+  {document.getElementById("goldencard").setAttribute("style","color: red;") 
+   localStorage.goldenCard=true;
+  }
+ else
+  {document.getElementById("goldencard").setAttribute("style","color: black;") 
+   localStorage.goldenCard=false;
+  }  
+}
+

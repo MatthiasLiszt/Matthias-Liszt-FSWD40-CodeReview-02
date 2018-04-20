@@ -8,17 +8,34 @@ function priceCalculation() {
     var o1b = 'a <b>Flight to Amsterdam</b>,';
     var o2a = ' it costs:</p> <p>';
     var o2b = ' EUR</p>';
+    var gold='as a GoldenCard holder, you will get a 10% discount:</p>';
 
     if (localStorage.productTwo == 'true' && localStorage.productOne != 'true') {
-        document.write(o0 + o1b + o2a + ProductTwo.price + o2b);
+        var message=o0 + o1b + o2a + ProductTwo.price + o2b;
+        var goldmessage=o0 + o1b + gold + ProductTwo.price*0.9 + o2b;
+        if(localStorage.goldenCard=='true')
+         {document.write(goldmessage);}
+        else
+         {document.write(message);} 	
 
     }
     if (localStorage.productOne == 'true' && localStorage.productTwo != 'true') {
-        document.write(o0 + o1 + o2a + ProductOne.price + o2b);
+     var message=o0 + o1 + o2a + ProductOne.price + o2b;
+     var goldmessage=o0 + o1 + gold + ProductOne.price*0.9 + o2b;
+     if(localStorage.goldenCard=='true')
+      {document.write(goldmessage);}
+     else
+      {document.write(message);}       
 
     }
     if (localStorage.productOne == 'true' && localStorage.productTwo == 'true') 
-    	{ document.write(o0 + o1 + ' and ' + o1b + o2a + sum + o2b); }
+    	{ var message=o0 + o1 + ' and ' + o1b + o2a + sum + o2b;
+    	  var goldmessage=o0 + o1 + ' and ' + o1b + gold + sum*0.9 + o2b;  
+    	  if(localStorage.goldenCard=='true')
+    	   {document.write(goldmessage);}
+    	  else
+    	   {document.write(message);}                     
+        }
     console.log('invoice localStorage ' + localStorage.productOne + ' ' + localStorage.productTwo);
 
 
