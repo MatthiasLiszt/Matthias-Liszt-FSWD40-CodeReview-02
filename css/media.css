@@ -3,6 +3,7 @@
  .cityName,.price,.countryName,.priceDescription{
   font-size: 0.5em;	
  }	
+ header div{font-size: 6vh;}
 }
 
 @media screen and (min-width: 401px) and (max-width: 1000px){
