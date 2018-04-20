@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Code Review Two</title>
+    <link rel="stylesheet" type="text/css" href="css/codefactory.css">
+    <script src="js/click.js" type="text/javascript"></script>
+</head>
+
+<body onload="eraseLocalStorage()">
+    <header>
+        <div id="logo"><img src="pix/logo.png" /></div>
+        <div>
+            <p>&nbsp;</p>Price comparison</div>
+    </header>
+    <div class="navbar">
+        <a class="blinking" href="invoice.html">Invoice</a>
+    </div>
+    <main>
+        <div id="amsterdam" onclick="clickHandler(2)">
+            <img src="pix/amsterdam.png" />
+            <div class="description">
+                <div class="line">
+                    <div class="cityName">Amsterdam</div>
+                    <div class="price">1189</div>
+                </div>
+                <div class="line">
+                    <div class="countryName">Netherlands</div>
+                    <div class="priceDescription">Average price</div>
+                </div>
+            </div>
+        </div>
+        <div id="london" onclick="clickHandler(1)">
+            <img src="pix/london.png" />
+            <div class="description">
+                <div class="line">
+                    <div class="cityName">London</div>
+                    <div class="price">2360</div>
+                </div>
+                <div class="line">
+                    <div class="countryName">United Kingdom</div>
+                    <div class="priceDescription">Average price</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

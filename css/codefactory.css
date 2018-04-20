@@ -16,9 +16,6 @@ header p {
   height: 7vh;
 }
 
-#logo {
-  width: 20vw;
-}
 
 main {
   display: flex;
@@ -75,3 +72,40 @@ body {
   text-align: right;
   color: grey;
 }
+
+.navbar {
+  background-color: white;
+  text-align: right;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.blinking {
+  animation: blinker 0.5s linear infinite;
+}
+
+#logo {
+  width: 20vw;
+}
+
+#logo img {
+  height: 25vh;
+  width: 20vw;
+  transition: height width 1.3s;
+}
+
+#logo img:hover {
+  transform: rotate(180deg);
+  height: 9vh;
+  width: 9vw;
+}
+
+
