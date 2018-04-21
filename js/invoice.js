@@ -4,11 +4,11 @@ var ProductTwo = { name: "Trip to Amsterdam", price: 1189 };
 function priceCalculation() {
     var sum = ProductOne.price + ProductTwo.price;
     var o0 = '<p>If you want to buy ';
-    var o1 = 'a <b>Flight to London</b>'
+    var o1 = 'a <b>Flight to London</b> '
     var o1b = 'a <b>Flight to Amsterdam</b>,';
     var o2a = ' it costs:</p> <p>';
     var o2b = ' EUR</p>';
-    var gold='as a GoldenCard holder, you will get a 10% discount:</p>';
+    var gold=' as a GoldenCard holder, you will get a 10% discount:</p>';
 
     if (localStorage.productTwo == 'true' && localStorage.productOne != 'true') {
         var message=o0 + o1b + o2a + ProductTwo.price + o2b;

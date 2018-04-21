@@ -1,0 +1,64 @@
+%lineCommons
+ margin-left: 1vw
+ margin-right: 1vw
+ 
+@mixin lineElement ($color,$width,$align,$fsize)
+ @extend %lineCommons
+ color: $color
+ font-size: $fsize
+ text-align: $align
+ width: $width
+ 
+ 
+.cityName
+ @include lineElement(lightblue,18vw,left,2em)
+   
+.price 
+ @include lineElement(darkgrey,8vw,right,2em)
+   
+body
+ font-family: "sans-serif"
+
+.line
+ display: flex
+
+.countryName
+ @include lineElement(grey,13vw,left,1em)
+
+.priceDescription
+ @include lineElement(grey,13vw,right,1em)
+
+.navbar
+ background-color: white
+ text-align: right
+ a
+  text-decoration: none
+  color: black
+  font-size: 1.5em
+   
+   
+@keyframes blinker 
+ 50% 
+ opacity: 0
+   
+.blinking
+ animation: blinker 0.5s linear infinite
+
+#logo
+ width: 20vw
+
+#logo img
+ height: 25vh
+ width: 20vw
+ transition: height width 1.3s
+  
+#logo img:hover
+ transform: rotate(180deg)
+ height: 9vh
+ width: 9vw
+
+.navbar button
+ border: none
+ color: black
+ background-color: transparent
+

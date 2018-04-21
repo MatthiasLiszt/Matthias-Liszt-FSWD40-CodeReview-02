@@ -16,7 +16,6 @@ header p {
   height: 7vh;
 }
 
-
 main {
   display: flex;
   background-color: lightgrey;
@@ -31,13 +30,16 @@ main img {
   width: 30vw;
 }
 
+.cityName, .price, .countryName, .priceDescription {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
 .cityName {
   color: lightblue;
   font-size: 2em;
   text-align: left;
   width: 18vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
 }
 
 .price {
@@ -45,8 +47,6 @@ main img {
   font-size: 2em;
   text-align: right;
   width: 8vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
 }
 
 body {
@@ -58,19 +58,17 @@ body {
 }
 
 .countryName {
-  width: 13vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  text-align: left;
   color: grey;
+  font-size: 1em;
+  text-align: left;
+  width: 13vw;
 }
 
 .priceDescription {
-  width: 13vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  text-align: right;
   color: grey;
+  font-size: 1em;
+  text-align: right;
+  width: 13vw;
 }
 
 .navbar {
@@ -107,7 +105,6 @@ body {
   height: 9vh;
   width: 9vw;
 }
-
 
 .navbar button {
   border: none;

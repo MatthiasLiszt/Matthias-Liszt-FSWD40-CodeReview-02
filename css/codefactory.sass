@@ -1,3 +1,5 @@
+@import '_codefactory'
+
 header 
  background-color: darkblue
  height: 30vh
@@ -24,73 +26,3 @@ main
  img 
   width: 30vw
 
-.cityName
-  color: lightblue
-  font-size: 2em
-  text-align: left
-  width: 18vw
-  margin-left: 1vw
-  margin-right: 1vw
-   
-.price 
- color: darkgrey
- font-size: 2em 
- text-align: right
- width: 8vw
- margin-left: 1vw
- margin-right: 1vw
-   
-body
- font-family: "sans-serif"
-
-.line
- display: flex
-
-.countryName
- width: 13vw
- margin-left: 1vw
- margin-right: 1vw
- text-align: left
- color: grey
-
-.priceDescription
- width: 13vw
- margin-left: 1vw
- margin-right: 1vw
- text-align: right
- color: grey
-
-.navbar
- background-color: white
- text-align: right
- a
-  text-decoration: none
-  color: black
-  font-size: 1.5em
-   
-   
-@keyframes blinker 
- 50% 
-  opacity: 0
-   
-.blinking
- animation: blinker 0.5s linear infinite
-
-#logo
- width: 20vw
-
-#logo img
- height: 25vh
- width: 20vw
- transition: height width 1.3s
-  
-#logo img:hover
- transform: rotate(180deg)
- height: 9vh
- width: 9vw
-
-.navbar button
- border: none
- color: black
- background-color: transparent
- font-size: 1.5em

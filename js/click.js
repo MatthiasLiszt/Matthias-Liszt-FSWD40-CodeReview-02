@@ -33,12 +33,14 @@ function clickHandler(product){
 }
 
 function SelectIt(Id){
- Id.setAttribute("style","border: red solid 2px;");
+ //Id.setAttribute("style","border: red solid 2px;");
+ Id.style.borderColor="red"; 
  console.log('localStorage '+localStorage.productOne+' '+localStorage.productTwo);
 }
 
 function UnselectIt(Id){
- Id.setAttribute("style","border: grey solid 2px;");
+ //Id.setAttribute("style","border: grey solid 2px;");
+ Id.style.borderColor="grey";c
  console.log('localStorage '+localStorage.productOne+' '+localStorage.productTwo);
 
 }
@@ -52,11 +54,11 @@ function eraseLocalStorage(){
 
 function goldenCardBonus(){
  if(localStorage.goldenCard='false') 
-  {document.getElementById("goldencard").setAttribute("style","color: red;") 
+  {document.getElementById("goldencard").style.color="red"; 
    localStorage.goldenCard=true;
   }
  else
-  {document.getElementById("goldencard").setAttribute("style","color: black;") 
+  {document.getElementById("goldencard").style.color="black"; 
    localStorage.goldenCard=false;
   }  
 }
